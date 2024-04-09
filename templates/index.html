@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Job Description</title>
+</head>
+<body>
+    <h1>Generate Job Description</h1>
+    <form action="/generate_jd" method="post">
+        <label for="company_name">Company Name:</label><br>
+        <input type="text" id="company_name" name="company_name"><br><br>
+
+        <label for="job_title">Job Title:</label><br>
+        <input type="text" id="job_title" name="job_title"><br><br>
+
+        <label for="mandatory_skills">Mandatory Skills:</label><br>
+        <input type="checkbox" name="mandatory_skills" value="DJango"> DJango<br>
+        <input type="checkbox" name="mandatory_skills" value="python"> python<br>
+        <br>
+
+        <label for="overall_experience">Overall Experience Required:</label><br>
+        <input type="text" id="overall_experience" name="overall_experience"><br><br>
+
+        <label for="primary_skill">Primary Skill:</label><br>
+        <input type="text" id="primary_skill" name="primary_skill"><br><br>
+
+        <label for="min_experience_primary">Min Experience Required on Primary Skill:</label><br>
+        <input type="text" id="min_experience_primary" name="min_experience_primary"><br><br>
+
+        <input type="submit" value="Create JD">
+    </form>
+</body>
+</html>
